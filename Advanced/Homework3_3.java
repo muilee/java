@@ -11,7 +11,7 @@ public class Homework3_3 {
 		String insertStmt = "INSERT INTO emp VALUES(?,?,?,?,?,?,?)";
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection(connUrl, "root", "jack5221934");
+			conn = DriverManager.getConnection(connUrl, "account", "password");
 			PreparedStatement pstmt = conn.prepareStatement(qryStmt);
 			ResultSet rs = pstmt.executeQuery();
 			pstmt = conn.prepareStatement(insertStmt);

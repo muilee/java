@@ -14,7 +14,7 @@ public class Homework3_2 {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
 			FileReader fr = new FileReader(f);
-			conn = DriverManager.getConnection(connUrl, "root", "jack5221934");
+			conn = DriverManager.getConnection(connUrl, "account", "password");
 			int i = 0;
 			String content = "";
 			while((i = fr.read()) != -1) {

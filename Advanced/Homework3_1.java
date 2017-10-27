@@ -16,7 +16,7 @@ public class Homework3_1 {
 		String connUrl = "jdbc:mysql://localhost:3306/jdbc?useSSL=false";
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection(connUrl, "root", "jack5221934");
+			conn = DriverManager.getConnection(connUrl, "account", "password");
 			String qryStmt = "SELECT empno, salary FROM employee";
 			PreparedStatement pstmt = conn.prepareStatement(qryStmt);
 			ResultSet rs = pstmt.executeQuery();
